@@ -10,9 +10,7 @@
     "clean": "rm -rf dist",
     "type-check": "tsc --noEmit"
   },
-  "dependencies": {
-    "@repo/types": "workspace:*"
-  },
+  "dependencies": {},
   "devDependencies": {
     "typescript": "^5.8.3"
   }

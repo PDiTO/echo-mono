@@ -1,5 +1,5 @@
 {
-  "name": "@repo/utils",
+  "name": "@repo/trading-engine",
   "version": "0.0.1",
   "private": true,
   "main": "dist/index.js",
