@@ -94,6 +94,12 @@ temp/
 logs
 *.log
 
+# Development log files
+backend.log
+types-watch.log
+trading-watch.log
+*-watch.log
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
