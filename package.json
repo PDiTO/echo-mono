@@ -10,7 +10,8 @@
     "test": "turbo test",
     "type-check": "turbo type-check",
     "clean": "turbo clean",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "check:artifacts": "./scripts/check-build-artifacts.sh"
   },
   "packageManager": "pnpm@10.12.4",
   "devDependencies": {

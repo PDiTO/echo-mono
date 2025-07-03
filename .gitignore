@@ -10,6 +10,12 @@ build/
 .next/
 .turbo/
 
+# TypeScript build artifacts (should never be in src/)
+**/src/**/*.js
+**/src/**/*.d.ts
+**/src/**/*.js.map
+**/src/**/*.d.ts.map
+
 # Environment variables
 .env
 .env.local
