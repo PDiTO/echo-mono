@@ -2,12 +2,20 @@
   "name": "echo-ts-v2",
   "version": "1.0.0",
   "description": "A monorepo with Fastify backend, Next.js frontend, and shared packages",
+  "type": "module",
   "private": true,
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "test": "turbo test",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "test:adapters": "vitest packages/adapters",
+    "test:trading": "vitest packages/trading-engine",
+    "test:types": "vitest packages/types",
+    "test:database": "vitest packages/database",
     "type-check": "turbo type-check",
     "clean": "turbo clean && pnpm run clean:logs",
     "clean:logs": "rm -f *.log *-watch.log && find packages apps -name '*.tsbuildinfo' -delete",
@@ -19,9 +27,11 @@
     "@types/node": "^24.0.10",
     "@typescript-eslint/eslint-plugin": "^8.20.0",
     "@typescript-eslint/parser": "^8.20.0",
+    "@vitest/ui": "^3.2.4",
     "eslint": "^9.30.1",
     "prettier": "^3.6.2",
     "turbo": "^2.5.4",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
   }
 }
