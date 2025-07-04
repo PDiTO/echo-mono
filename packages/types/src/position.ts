@@ -5,5 +5,6 @@ export interface Position {
   size: number;
   avgOpenBp: BP;
   realizedPnl: number;
+  unrealizedPnl: number;
   updatedAt: bigint;
 }
